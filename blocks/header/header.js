@@ -25,6 +25,9 @@ function closeOnEscape(e) {
 }
 
 function closeOnFocusLost(e) {
+  if (!isDesktop.matches) {
+    return;
+  }
   const nav = e.currentTarget;
   if (!nav.contains(e.relatedTarget)) {
     const navSections = nav.querySelector(".nav-sections");
@@ -85,10 +88,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   const button = nav.querySelector(".nav-hamburger button");
   document.body.style.overflowY = expanded || isDesktop.matches ? "" : "hidden";
   nav.setAttribute("aria-expanded", expanded ? "false" : "true");
-  toggleAllNavSections(
-    navSections,
-    expanded || isDesktop.matches ? "false" : "true",
-  );
+  toggleAllNavSections(navSections, false);
   button.setAttribute(
     "aria-label",
     expanded ? "Open navigation" : "Close navigation",
@@ -165,17 +165,23 @@ export default async function decorate(block) {
       .forEach((navSection) => {
         if (navSection.querySelector("ul"))
           navSection.classList.add("nav-drop");
-        navSection.addEventListener("click", () => {
-          if (isDesktop.matches) {
-            const expanded =
-              navSection.getAttribute("aria-expanded") === "true";
-            toggleAllNavSections(navSections);
-            navSection.setAttribute(
-              "aria-expanded",
-              expanded ? "false" : "true",
-            );
+        if (navSection.querySelector("ul")) {
+          navSection.classList.add("nav-drop");
+          const label = navSection.querySelector(":scope > p");
+          if (label) {
+            label.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              const expanded =
+                navSection.getAttribute("aria-expanded") === "true";
+              toggleAllNavSections(navSections, false);
+              navSection.setAttribute(
+                "aria-expanded",
+                expanded ? "false" : "true",
+              );
+            });
           }
-        });
+        }
       });
   }
 
