@@ -204,14 +204,52 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt",
-        "value": ""
+        "value": "Scenic European travel destination"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "value": "WKND Adventures"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading",
+        "value": "Destinations"
       },
       {
         "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "value": "<p>From Patagonian valleys to Norwegian fjords, where will you go next?</p>"
+      },
+      {
+        "component": "text",
+        "name": "primaryCtaLabel",
+        "label": "Primary CTA",
+        "value": "Americas"
+      },
+      {
+        "component": "text",
+        "name": "primaryCtaLink",
+        "label": "Primary CTA Link",
+        "value": "/americas"
+      },
+      {
+        "component": "text",
+        "name": "secondaryCtaLabel",
+        "label": "Secondary CTA",
+        "value": "Europe"
+      },
+      {
+        "component": "text",
+        "name": "secondaryCtaLink",
+        "label": "Secondary CTA Link",
+        "value": "/europe"
       }
     ]
   }
