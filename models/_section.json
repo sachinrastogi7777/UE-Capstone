@@ -39,6 +39,14 @@
               "value": "explore-region"
             },
             {
+              "name": "Region1",
+              "value": "region1"
+            },
+            {
+              "name": "Region2",
+              "value": "region2"
+            },
+            {
               "name": "Permits Logistics",
               "value": "permits-logistics"
             },
