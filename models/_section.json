@@ -33,6 +33,26 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Explore Region",
+              "value": "explore-region"
+            },
+            {
+              "name": "Permits Logistics",
+              "value": "permits-logistics"
+            },
+            {
+              "name": "Regional Editors",
+              "value": "regional-editors"
+            },
+            {
+              "name": "Adventure Briefing",
+              "value": "adventure-briefing"
+            },
+            {
+              "name": "Planning Season",
+              "value": "planning-season"
             }
           ]
         }
