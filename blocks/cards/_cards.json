@@ -43,11 +43,29 @@
           "multi": false
         },
         {
+          "component": "text",
+          "name": "eyebrow",
+          "label": "Eyebrow"
+        },
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title"
+        },
+        {
           "component": "richtext",
-          "name": "text",
-          "value": "",
-          "label": "Text",
-          "valueType": "string"
+          "name": "description",
+          "label": "Description"
+        },
+        {
+          "component": "text",
+          "name": "linkLabel",
+          "label": "Link Label"
+        },
+        {
+          "component": "text",
+          "name": "linkUrl",
+          "label": "Link URL"
         }
       ]
     }
@@ -55,9 +73,7 @@
   "filters": [
     {
       "id": "cards",
-      "components": [
-        "card"
-      ]
+      "components": ["card"]
     }
   ]
 }
