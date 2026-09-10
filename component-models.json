@@ -228,46 +228,6 @@
     ]
   },
   {
-    "id": "footer",
-    "fields": [
-      {
-        "component": "text",
-        "name": "brandTitle",
-        "label": "Brand Title"
-      },
-      {
-        "component": "richtext",
-        "name": "brandDescription",
-        "label": "Brand Description"
-      },
-      {
-        "component": "richtext",
-        "name": "exploreText",
-        "label": "Explore Links"
-      },
-      {
-        "component": "richtext",
-        "name": "storiesText",
-        "label": "Recent Stories"
-      },
-      {
-        "component": "richtext",
-        "name": "infoText",
-        "label": "Info Links"
-      },
-      {
-        "component": "text",
-        "name": "copyright",
-        "label": "Copyright"
-      },
-      {
-        "component": "text",
-        "name": "tagline",
-        "label": "Tagline"
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
