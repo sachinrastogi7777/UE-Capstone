@@ -32,36 +32,21 @@
         },
 
         {
-          "component": "text",
-          "name": "exploreTitle",
-          "label": "Explore Title"
+          "component": "richtext",
+          "name": "exploreText",
+          "label": "Explore Links"
         },
 
         {
-          "component": "multifield",
-          "name": "exploreLinks"
+          "component": "richtext",
+          "name": "storiesText",
+          "label": "Recent Stories"
         },
 
         {
-          "component": "text",
-          "name": "storiesTitle",
-          "label": "Stories Title"
-        },
-
-        {
-          "component": "multifield",
-          "name": "storiesLinks"
-        },
-
-        {
-          "component": "text",
-          "name": "infoTitle",
-          "label": "Info Title"
-        },
-
-        {
-          "component": "multifield",
-          "name": "infoLinks"
+          "component": "richtext",
+          "name": "infoText",
+          "label": "Info Links"
         },
 
         {
