@@ -124,7 +124,7 @@
 
 .section:has(#every-destination-starts-with-a-good-briefing) {
     background: #031f18;
-    padding: 80px 24px;
+    padding: 40px 24px;
 }
 
 .section:has(#every-destination-starts-with-a-good-briefing)
@@ -293,5 +293,11 @@
     #every-destination-starts-with-a-good-briefing + p + p a {
         width: 100%;
         min-width: unset;
+        padding: 18px 10px;
+    }
+
+    .section:has(#regional-editors) p:nth-of-type(2) a,
+    .section:has(#regional-editors) p:nth-of-type(3) a {
+        padding: 18px;
     }
 }
